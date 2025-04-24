@@ -5,9 +5,9 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\TaskController;
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 // Task Routes
 Route::post('/tasks', [TaskController::class, 'add']);
 Route::patch('/tasks/{id}', [TaskController::class, 'markCompleted']);
